@@ -50,7 +50,9 @@ h1 > span{
 
     color: hsla(34, 78%, 91%, 1);
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
+    
     
 }
 
@@ -69,8 +71,8 @@ h1 > span{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "p1 p1"
-            "p2 p2"
-            "p3 p3"
+            "p2 p3"
+/*            "p3 p3"*/
             "p4 p5"
             "p6 p7";
     }
@@ -85,13 +87,17 @@ h1 > span{
     }
     .check-in{
         grid-area: p2;
+        margin-right: 15px;
     }
     .check-out{
         grid-area: p3;
+        margin-right: 15px;
     }
     .search {
         grid-area: p7;
         text-align: center;
+        font-size: 2rem;
+     
     }
     .min-price{
         grid-area: p4;
